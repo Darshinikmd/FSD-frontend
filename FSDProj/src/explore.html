@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+*{
+    padding:10px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+ }
+ body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #021235;
+    color:#eee
+    background-image:linear-gradient(to bottom,#021235,transparent),url(https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?cs=srgb&dl=pexels-oleksandr-p-3278215.jpg&fm=jpg);
+ }
+ h1,h2,h3,h4{
+    font-family: 'Roboto',sans-serif;
+ }
+ .nav-bar{
+    position:absolute;
+    
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 1px 1px 2px #353f5b;
+    
+ }
+ .content{
+    max-width: 100%;
+    margin:0 auto;
+    padding:1.6rem 1rem;
+ }
+ .nav-bar .content{
+    max-width: 1300px;
+    margin:0 auto;
+    padding:1.6rem 1rem;
+    display:flex;
+    
+    justify-content: space-between;
+    gap:2rem;
+
+ }
+ .nav-bar .site-logo{
+    padding:0rem;
+ }
+ .nav-bar .site-logo .logo-link{
+    padding:0.25rem 0.5rem;
+    font-weight: 700;
+    font-size:35px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #fff;
+    border-top:1px solid #f35405;
+    border-bottom:1px solid #f35405;
+    
+ }
+ nav-bar .navigation{
+    list-style: none;
+    dislay:flex;
+    align-items: center;
+    gap: 1.4rem;
+ }
+ nav-bar .navigation .link a{
+    padding:0;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    border-top: 1px solid transparent ;
+    transition:all 0.6s;
+
+ }
+ nav-bar .navigation .link:hover a{
+   color: #f35405;
+   border-top:1px solid #f35405;
+    
+ }
+ .home{
+    background:linear-gradient(to bottom,#021235,transparent),url(https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?cs=srgb&dl=pexels-oleksandr-p-3278215.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:1rem;
+ }
+ .home .content{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    
+    margin:0 auto;
+    width:100%;
+ }
+ .home .content h1{
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 4px;
+    
+    font-weight: 500;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvW5YgeJIVtBYcPzsoPdMjmJ9RA-U_GQI3Ag&usqp=CAU);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+    max-width: 450px;
+ }
+ .home .content h4{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+    color:#f6f7f9;
+
+ }
+ .home .content .btn-explore{
+    width: fit-content;
+    background-color: #f35405;
+    padding:0.9rem 2.4rem;
+    font-size:16px ;
+    line-height: 16px;
+    color:#fff;
+    border: 2px solid #f35405;
+    border-left:2px solid #f35405;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    transition: all 1s;
+   
+ }
+ 
+ .home .content .btn-explore:hover{
+   
+    border: 2px solid #f35405;
+    border-left:2px solid #f35405;
+    padding-left: 2rem;
+    transition: all 1s;
+ }
+ section
+ {
+   min-height: 100vh;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:2rem;
+
+ }
+ section .content{
+   width: 100%;
+   max-width: 1300%;
+ }
+.navigation
+{
+   color: #eee;
+}
+.about-desc{
+   display: flex;
+   font-size: 20px;
+}
+.about .items{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,ifr));
+   gap: 2 rem;
+}
+.img{
+   width: 350px;
+}
+.item-content{
+   padding-top: 0px;
+}
+.item-data{
+   width :100%;
+   padding:2rem 0rem;
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 5rem;
+}
+.about .item-data .col
+{
+   width: 100%;
+   padding: 2rem 1rem;
+   background-color: #000;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   border-top:7px solid  #090202;
+   cursor: pointer;
+}
+.about .item-data .col:hover
+{ 
+   
+   background-color: #00000077;
+   cursor: pointer;
+   border-top:7px solid  #fff;
+} 
+.about .item-data .col h1{
+   text-align: center;
+   font-size: 60px;
+}
+.about .item-data .col span
+{
+   text-align: center;
+   font-size: 16px;
+}
+
+
+.next .items{
+   display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   gap:2rem;
+}
+.next .items .card {
+   width: 100%;
+   height: 350px;
+   overflow: hidden;
+   
+   padding: 0rem 2rem;
+}
+.next .items .card .image {
+   width: 100%;
+   height: 70%;
+   overflow: hidden;
+   padding:100px;
+   position: relative;
+  
+   
+}
+.next .items .card .image::after{
+   position: absolute;
+   content: ' ';
+   width: 100%;
+   height: 80%;
+   left:0; 
+   bottom:0;
+   height: 100%;
+   overflow: hidden;
+      
+}
+
+.next .card .content .card{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+   padding: 0rem 2rem;
+   transform: translateY(-50%);
+   color: #fff;
+   z-index: 20;
+}
+.next .card .content{
+   font-size: 20px;
+   font-weight: 800;
+   color: #fff;
+}
+.next .card .content .card p{
+   font-size: 10px;
+   font-weight: 400;
+   color: #fff;
+}
+.im{
+   width:400px;
+}
+#content-card{
+   position: absolute;
+}
+section .heading{
+   display:flex;
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 0.7rem;
+   padding: 2rem 0rem;
+}
+section .heading .title{
+   text-transform: uppercase;
+   font-size: 36px;
+   font-weight: 600; 
+   color: #fff;
+   text-align: center;
+}
+section .heading .subtitle{
+   font-size: 20px;
+   font-weight: 300;
+   color: #eee;
+}
+.content .items .card .image{
+   padding: 50px;
+}
+.content-card{
+   padding-left: 52px;
+}
+.card{
+   padding-right: 50px;
+}
+.im:hover{
+   border-radius: 20px;  
+   transform: scale(1.5); 
+   transition: transform .2s;
+
+
+}
+.card{
+   background-color: #eee;
+   background-
+
+}
+.checked{
+color:orange;
+}
+.a1{
+   color:white;
+}
+.button{
+       width: 100px;
+ height:30px;
+text-align: center;
+background-color:#f35405;
+color: white;
+font-size: 20px;
+               
+            }
+            .search input[type=text] {
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+}
+ 
+.search {
+    float: right;
+    margin: 7px;
+    align-items: end;
+    display: inline-block;
+    padding-top: 20px;
+}
+ 
+.search button {
+    
+    color: #f2f2f2;
+    float: right;
+    padding: 3px 3px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.d1{
+   padding-top: 90px;
+}
+.btn-explore{
+   background-color: #f35405;
+   color:#eee;
+  
+}
+.fa 
+{
+    color:black;
+
+}
+.checked{
+    color:orange;
+}
+.about-title{
+   color:#eee;
+}
+.about-desc{
+   color: #eee;
+}
+.p3{
+   color: #eee;
+   font-size: 18px;
+}
+
+        </style>
+        <body>
+           
+               <section class="next" >
+                <div class="heading">
+                   <h1 class="title">discover the most attractive destination</h1>
+                   <p class="subtitle">Let's see the world with your passion</p>
+                </div>
+                <div class="content">
+                   <div class="items"> 
+                      <div class="card">
+                         <div class="image">
+                         <img  class="im" src="https://media1.popsugar-assets.com/files/thumbor/pgH2-YtJV5DH2ETNf-hj6FWFhQM=/fit-in/7952x5304/top/filters:format_auto():extract_cover():upscale()/2020/03/23/214/n/45101125/4588859d76e79dc3_GettyImages-1062428612.jpg">
+                      </div>
+                      <div class="content-card">
+                         
+                         <h4>Italy </h4> 
+                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                         
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span>
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+                      </div>     
+                      
+                   </div> 
+                   <div class="card">
+                      <div class="image">
+                      <img  class="im" src="https://www.holidify.com/images/bgImages/PARIS.jpg">   
+                   </div>
+                   <div class="content-card">
+                      <h4>Paris</h4>  
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+                   </div>      
+                </div> 
+                <div class="card">
+                   <div class="image">
+                   <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-india-taj-mahal.jpg">
+                   
+                </div>
+                <div class="content-card">
+                   <h4>Taj Mahal</h4> 
+                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span> 
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+                </div> 
+             </div> 
+                </div>
+             </div>
+             <div class="content">
+                <div class="items"> 
+                   <div class="card">
+                      <div class="image">
+                      <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-sydney-opera-house.jpg">
+                      
+                   </div>
+                   <div class="content-card">
+                      <h4>Sydney Opera House </h4>  
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+                   </div>     
+                </div> 
+                <div class="card">
+                   <div class="image">
+                   <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-tanzania-mt-kilimanjaro.jpg">   
+                </div>
+                <div class="content-card">
+                   <h4>Mount Kilimanjaro</h4> 
+                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star "></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span> 
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+                </div>      
+             </div>  
+             <div class="card">
+                <div class="image">
+                <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-italy-rome-colosseum.jpg">
+                
+             </div>
+             <div class="content-card">
+                <h4>The Colossem, Rome</h4>  
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span>
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+             </div> 
+          </div> 
+             </div>
+          </div>
+          <div class="content">
+             <div class="items"> 
+                <div class="card">
+                   <div class="image">
+                   <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-new-york-statue-of-liberty.jpg">
+                </div>
+                <div class="content-card">
+                   <h4>Statue of Liberty, New York City</h4> 
+                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span> 
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+                </div>     
+             </div> 
+             <div class="card">
+                <div class="image">
+                <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-egypt-pyramids-giza.jpg">   
+             </div>
+             <div class="content-card">
+                <h4>Pyramids of Giza, Egypt</h4>  
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+             </div>      
+          </div> 
+          <div class="card">
+             <div class="image">
+             <img  class="im" src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-jordan-petra.jpg">
+             
+          </div>
+          <div class="content-card">
+             <h4>Petra, Jordan</h4>  
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span>
+                         <button class="btn-explore" onclick="displayitaly()">explore more  <i class="ri-arrow-right-line"></i></button>
+          </div> 
+       </div> 
+          </div>
+       </div>
+               </section>
+               
+                  <script>
+         function displayitaly()
+         {
+            window.location='http://127.0.0.1:5500/FSDProj/src/fe2.html'
+         }
+         function exploremore()
+         {
+            window.location='http://127.0.0.1:5500/FSDProj/src/explore.html'
+         }
+        </script>
+               
+        </body>
+    </head>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="'viewport" content="width=device-width,initial-scale=1.0">
+        <title>travel agency</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+    
+ *{
+    padding:10px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+ }
+ body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #021235;
+    color:#eee
+ }
+ h1,h2,h3,h4{
+    font-family: 'Roboto',sans-serif;
+ }
+ .nav-bar{
+    position:absolute;
+    
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 1px 1px 2px #353f5b;
+ }
+ .content{
+    max-width: 1300px;
+    margin:0 auto;
+    padding:1.6rem 1rem;
+ }
+ .nav-bar .content{
+    max-width: 1300px;
+    margin:0 auto;
+    padding:1.6rem 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+
+ }
+ .nav-bar .site-logo{
+    padding:0.5rem;
+ }
+ .nav-bar .site-logo .logo-link{
+    padding:0.25rem 0.5rem;
+    font-weight: 700;
+    font-size:22px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #fff;
+    border-top:1px solid #f35405;
+ }
+ nav-bar .navigation{
+    list-style: none;
+    dislay:flex;
+    align-items: center;
+    gap: 1.4rem;
+ }
+ nav-bar .navigation .link a{
+    padding:0;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    border-top: 1px solid transparent ;
+    transition:all 0.6s;
+
+ }
+ nav-bar .navigation .link:hover a{
+   color: #f35405;
+   border-top:1px solid #f35405;
+    
+ }
+ .home{
+    background:linear-gradient(to bottom,#021235,transparent),url(https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?cs=srgb&dl=pexels-oleksandr-p-3278215.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:1rem;
+ }
+ .home .content{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    
+    margin:0 auto;
+    width:100%;
+ }
+ .home .content h1{
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 4px;
+    
+    font-weight: 500;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvW5YgeJIVtBYcPzsoPdMjmJ9RA-U_GQI3Ag&usqp=CAU);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+    max-width: 450px;
+ }
+ .home .content h4{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+    color:#f6f7f9;
+
+ }
+ .home .content .btn-explore{
+    width: fit-content;
+    background-color: #f35405;
+    padding:0.9rem 2.4rem;
+    font-size:16px ;
+    line-height: 16px;
+    color:#fff;
+    border: 2px solid #f35405;
+    border-left:2px solid #f35405;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    transition: all 1s;
+   
+ }
+ .home .content .btn-explore:hover{
+   
+    border: 2px solid #f35405;
+    border-left:2px solid #f35405;
+    padding-left: 2rem;
+    transition: all 1s;
+ }
+ section
+ {
+   min-height: 100vh;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:2rem;
+
+ }
+ section .content{
+   width: 100%;
+   max-width: 1300%;
+ }
+.navigation
+{
+   color: #eee;
+}
+.about-desc{
+   display: flex;
+   font-size: 20px;
+}
+.about .items{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,ifr));
+   gap: 2 rem;
+}
+.img{
+   width: 350px;
+}
+.item-content{
+   padding-top: 0px;
+}
+.item-data{
+   width :100%;
+   padding:2rem 0rem;
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 5rem;
+}
+.about .item-data .col
+{
+   width: 100%;
+   padding: 2rem 1rem;
+   background-color: #000;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   border-top:7px solid  #090202;
+   cursor: pointer;
+}
+.about .item-data .col:hover
+{ 
+   
+   background-color: #00000077;
+   cursor: pointer;
+   border-top:7px solid  #fff;
+} 
+.about .item-data .col h1{
+   text-align: center;
+   font-size: 60px;
+}
+.about .item-data .col span
+{
+   text-align: center;
+   font-size: 16px;
+}
+.next{
+   background-color: #000;
+}
+.next .items{
+   display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   gap:2rem;
+}
+.next .items .card {
+   width: 100%;
+   height: 350px;
+   overflow: hidden;
+   
+   padding: 0rem 2rem;
+}
+.next .items .card .image {
+   width: 100%;
+   height: 70%;
+   overflow: hidden;
+   padding:100px;
+   background: linear-gradient(to top,black,transparent);
+   position: relative;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   
+}
+.next .items .card .image::after{
+   position: absolute;
+   width: 100%;
+   height: 80%;
+   left:0; 
+   bottom:0;
+   height: 100%;
+   overflow: hidden;
+   background-image: linear-gradient(to top,black,transparent); 
+   position: relative;
+    
+   
+}
+.im{
+   width:400px;
+}
+section .heading{
+   display:flex;
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 0.7rem;
+   padding: 2rem 0rem;
+}
+section .heading .title{
+   text-transform: uppercase;
+   font-size: 36px;
+   font-weight: 600; 
+   color: #fff;
+   text-align: center;
+}
+section .heading .subtitle{
+   font-size: 20px;
+   font-weight: 300;
+   color: #eee;
+}
+.content .items .card .image{
+   padding: 50px;
+}
+.card{
+   padding-right: 50px;
+}
+        </style>
+    </head>
+    <body>
+        
+       <nav class="nav-bar">
+        <div class="content">
+            <div class="site-logo">
+                <a href="#" class="logo-link">travel</a>
+            </div>
+            <div class="navigation">
+                <a href="">Home</a>
+                <a href="">About us</a>
+                <a href="">Reviews</a></li>
+                <a href="C:\Users\Dharshini\Desktop\fsdproj\FSDProj\src\prt.html">Book</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+               </div>
+               <div class="d1">
+               <a href="C:\Users\Dharshini\Desktop\fsdproj\FSDProj\src\prt2.html" >Login</a>
+               <a href="">Sign Up</a>
+
+            </div>
+        </div>
+       </nav>
+       <header class="home">
+        <div class="content">
+            <h1>The <strong>strong</strong>way to<strhttp://127.0.0.1:5500/src/fe.htmlong>plan your next </strong>adventure</h1>
+            <h4>Explore the colourful world like never seen</h4>
+            <button class="btn-explore">explore more  <i class="ri-arrow-right-line"></i></button>
+        </div> </header>
+        <section class="about">
+            <div class="content">
+                <div class="image">
+                    <img  class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCn7SGxat4bXmi0amoCBqXEbIw_Vy3aaRNcg&usqp=CAU" alt="">
+                   
+                    <h2 class="about-title">
+                        About Us
+                    </h2>
+                    <div class="about-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cumque deserunt voluptatem atque, voluptates deleniti ipsam iste odit quasi vitae!
+                        </p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-content">
+
+                    </div>
+                    <div class="item-data">
+                     <div class="col">
+                        <h1>387</h1>
+                        <span>Completed Trips</span>
+                     </div>
+                     <div class="col">
+                        <h1>71</h1>
+                        <span>Tour Guide</span>
+                     </div>
+                     <div class="col">
+                        <h1>387</h1>
+                        <span>Destinations</span>
+                     </div>
+
+                    </div>
+                </div>
+            </div> 
+        </section >
+        <section class="next" >
+         <div class="heading">
+            <h1 class="title">discover the most attractive destination</h1>
+            <p class="subtitle">Let's see the world with your passion</p>
+         </div>
+         <div class="content">
+            <div class="items"> 
+               <div class="card">
+                  <div class="image">
+                  <img  class="im" src="https://media1.popsugar-assets.com/files/thumbor/pgH2-YtJV5DH2ETNf-hj6FWFhQM=/fit-in/7952x5304/top/filters:format_auto():extract_cover():upscale()/2020/03/23/214/n/45101125/4588859d76e79dc3_GettyImages-1062428612.jpg">
+                  
+               </div>
+               <div class="content-card">
+                  <h4>Italy</h4>  
+               </div> 
+               <div class="cont ">
+                  <h4>Italy</h4>
+                 
+                 
+               </div>  
+
+            </div> 
+            <div class="card">
+               <div class="image">
+               <img  class="im" src="https://media1.popsugar-assets.com/files/thumbor/pgH2-YtJV5DH2ETNf-hj6FWFhQM=/fit-in/7952x5304/top/filters:format_auto():extract_cover():upscale()/2020/03/23/214/n/45101125/4588859d76e79dc3_GettyImages-1062428612.jpg">
+               
+            </div>
+            <div class="content-card">
+               <h4>Italy</h4>  
+            </div> 
+            <div class="cont ">
+               <h4>Italy</h4>
+              
+              
+            </div>  
+
+         </div> 
+         <div class="card">
+            <div class="image">
+            <img  class="im" src="https://media1.popsugar-assets.com/files/thumbor/pgH2-YtJV5DH2ETNf-hj6FWFhQM=/fit-in/7952x5304/top/filters:format_auto():extract_cover():upscale()/2020/03/23/214/n/45101125/4588859d76e79dc3_GettyImages-1062428612.jpg">
+            
+         </div>
+         <div class="content-card">
+            <h4>Italy</h4>  
+         </div> 
+         <div class="cont ">
+            <h4>Italy</h4>
+           
+           
+         </div>  
+
+      </div> 
+         </div>
+      </div>
+        </section>
+    
+</html>
+ 

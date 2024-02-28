@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+   body{
+  /* overflow: hidden; */
+  margin: 0;
+ 
+  position: fixed;
+
+    font-family:Arial;
+    font-size: 27px;
+    /* background-position:100%; */
+    
+  }
+  /* *{
+    box-sizing: border-box;
+    
+    
+  } */
+  body{
+    
+    background-size: cover; 
+     padding-top: 310px;
+     padding-left: 650px;
+    background-image: url(https://www.datocms-assets.com/32623/1649687936-plane_window_wing.jpeg);
+  }
+  .d1{
+    position:center;
+    box-shadow: 3px 3px 3px 3px;
+    border-radius: 8px;
+    width: fit-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    position:fixed;
+    backdrop-filter: blur(4px);
+    
+   }
+  
+  #t1,#p1{
+    height: 30px;
+    width: 200px;
+  }
+  .button{
+    height:30px;
+    width: 80px;
+  }
+  /* .button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+   } */
+   /* #myVideo {
+  position: fixed;
+  
+} */
+
+  </style>                                                                                                                                                        
+</head>
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="vd1.mp4" type="video/mp4">
+    </video> -->
+        <center>
+          <div class="d1">
+            
+        
+            <form class="container" name="myform" method="post" onsubmit="return validateForm()">
+        <p class="p1">
+        <b>
+          Username
+        </b>
+        <input type="text" id="t1" name="name" placeholder="Enter username " ><br><br>
+        <b>
+            Password
+        </b>
+        <input type="password" id="p1" name="password" placeholder="Enter password " ><br><br>
+        <button type="submit" class="button" onclick="login()">
+          Login
+        </button>
+        <a href=C:\Users\Dharshini\Desktop\fsdproj\FSDProj\src\prt.html></a>
+        
+    </p>
+  </form>
+</div>
+</center>
+<script>
+  function validateForm()
+  {
+    var name=document.myform.name.value;
+    var pw=document.myform.password.value;
+    if(name==""||name==null)
+    {
+      alert("Name cant't be blank");
+      return false;
+    }
+    else if(pw.length<6)
+    {
+      alert("Password must be atleast 6 characters long");
+      return false;
+    }
+    else{
+      window.location='http://127.0.0.1:5500/FSDProj/src/fe.html';
+    }
+  }
+  function login()
+  {
+    window.location='http://127.0.0.1:5500/FSDProj/src/fe.html';
+  }
+  </script>
+</body>
+</html>
